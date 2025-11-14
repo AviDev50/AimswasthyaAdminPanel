@@ -3,14 +3,14 @@ import React, { useState, useEffect } from "react";
 function Appointments() {
   const [appointments, setAppointments] = useState([]);
 
-  // Example API fetch (ready for backend)
+  // Example API fetch (ready for backend when we get api)
   useEffect(() => {
-    // Placeholder: Replace with actual API URL later
+    // Placeholder: When we get api then we Replace with actual API URL 
     fetch("/api/appointments")
       .then((res) => res.json())
       .then((data) => setAppointments(data))
       .catch(() => {
-        // Dummy data in case API not ready
+        // Dummy data beacause API not ready
         setAppointments([
           {
             id: 1,
@@ -60,6 +60,7 @@ function Appointments() {
           marginBottom: "25px",
         }}
       >
+        Select a doctor:
         <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
           <input
             type="text"
@@ -93,17 +94,6 @@ function Appointments() {
           />
         </div>
 
-        <button
-          style={{
-            backgroundColor: "#f1f5f9",
-            border: "1px solid #ccc",
-            borderRadius: "6px",
-            padding: "8px 16px",
-            cursor: "pointer",
-          }}
-        >
-          Dr. Vikram Batra
-        </button>
       </div>
 
       {/* Calendar */}
@@ -115,9 +105,26 @@ function Appointments() {
           padding: "20px",
         }}
       >
+        <div className="two-headings" style={{display:"flex",justifyContent:"space-between"}}>
         <h3 style={{ marginBottom: "10px", fontSize: "18px", fontWeight: "600" }}>
           January 2025
         </h3>
+        
+        <button
+          style={{
+            backgroundColor: "#f1f5f9",
+            border: "1px solid #ccc",
+            borderRadius: "6px",
+            padding: "8px 16px",
+            cursor: "pointer",
+            display:"flex",
+            justifyContent:"flex-end",
+            alignItems:"flex-end"
+          }}
+        >
+          Dr. Vikram Batra
+        </button>
+        </div>
         <div
           style={{
             display: "grid",

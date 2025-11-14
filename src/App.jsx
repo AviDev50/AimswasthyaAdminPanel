@@ -7,7 +7,7 @@ import Appointmentsdateview from "./components/Appointmentsdateview/dateview";
 import Hospitals from "./components/Hospitals/hospitals";
 import Notification from "./components/Notifications/notifications";
 import Patients from "./components/Patients/patients";
-import Appointments from "./components/Appointmentsdateview/dateview";
+import Appointments from "./components/Appointments/appointments"
 import Payments from "./components/PaymentAndDiscounts/payments";
 import Supportqueries from "./components/SupportQueries/supportqueries";
 
@@ -40,7 +40,7 @@ function App() {
         }
       />
          <Route
-        path="/Appointmentsdateview"
+        path="/Appointments"
         element={
           <Layout>
             <Appointments />
