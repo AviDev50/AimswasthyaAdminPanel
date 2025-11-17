@@ -1,6 +1,6 @@
 export default function DoctorProfileForm() {
   return (
-    <div className="w-full bg-white rounded-2xl p-8 flex gap-10">
+    <div className="w-full bg-white rounded-2xl p-8 flex gap-10 mt-20">
 
       {/* LEFT SIDE */}
       <div className="flex flex-col items-center w-1/4">
