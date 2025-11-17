@@ -39,7 +39,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
         <ul style={ulStyle}>
           <li><Link to="/dashboard" style={liStyle("/dashboard")}>Dashboard</Link></li>
           <li><Link to="/Patients" style={liStyle("/Patients")}>Patients</Link></li>
-          <li><Link to="/appointmentsdateview" style={liStyle("/appointmentsdateview")}>Appointments</Link></li>
+          <li><Link to="/appointments" style={liStyle("/appointments")}>Appointments</Link></li>
           <li><Link to="/doctors" style={liStyle("/doctors")}>Doctors</Link></li>
           <hr />
           <li><Link to="/hospitals" style={liStyle("/hospitals")}>Hospitals</Link></li>
